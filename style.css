@@ -1,0 +1,44 @@
+
+body{
+     background-image:url('./img.jpg');
+     background-attachment: fixed;
+     background-size: cover;
+}
+   
+#ip1{
+background-color: transparent;
+width:auto;
+
+}
+#btn1{
+background-color: transparent;
+color:red;
+    width:auto; 
+}   
+ #btn1:hover{
+
+     font-weight: bold;
+ }
+
+    
+    
+
+
+#ip1::placeholder{
+    color: blue;
+    letter-spacing:1px;
+    text-transform: capitalize;
+    padding-left:5px;
+    
+}
+#h21{
+    
+    width: max-content;
+}
+
+#div2{
+
+
+text-align:center ;
+
+}
