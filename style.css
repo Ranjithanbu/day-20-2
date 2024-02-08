@@ -32,13 +32,19 @@ color:red;
     
 }
 #h21{
-    
+    font-family:'Sofia';
     width: max-content;
-}
+}   
 
 #div2{
 
 
 text-align:center ;
 
+}
+#bt2{
+    font-size:30px;
+    background-color: transparent;
+    border:none;
+    margin-left:40%;
 }
