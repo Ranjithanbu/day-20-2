@@ -1,10 +1,15 @@
-function getweather(){
+function getweather() {
 
-let city=document.getElementById("ip1").value;
+    let city = document.getElementById("ip1").value;
 
-fetch(`https://api.weatherapi.com/v1/current.json?key=b626473b4ea344dbad3210850240702&q=${city}&aqi=yes`).then(val=>val.json()).then(ans=>{
-let data=`
+    fetch(`https://api.weatherapi.com/v1/current.json?key=b626473b4ea344dbad3210850240702&q=${city}&aqi=yes`).then(val =>val.json()).then(ans => {
+
+
+
+        let data = `
 <div class="col">
+<button id="bt2"><i class="bi bi-x"></i>
+</button>
 <h4>Name : ${ans.location.name}</h4>
 <h4>Country : ${ans.location.country}</h4>
 <h4>Region : ${ans.location.region}</h4>
@@ -17,12 +22,14 @@ let data=`
 
 </div>`
 
-console.log(data)
-document.getElementById("div2").innerHTML=data;
+        document.getElementById("div2").innerHTML = data;
 
-})
+        document.getElementById("bt2").addEventListener("click", () => {
+            document.getElementById("div2").innerHTML = "";
+        })
+
+
+    })
 
 }
-
-//https://goweather.herokuapp.com/weather/{city}
 
